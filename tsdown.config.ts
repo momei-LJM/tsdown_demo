@@ -13,10 +13,6 @@ export default defineConfig({
   unbundle: true,
   outDir: "dist",
   treeshake: false,
-  outputOptions: {
-    preserveModules: true,
-    preserveModulesRoot: "src/main",
-  },
   dts: {
     vue: true,
   },
