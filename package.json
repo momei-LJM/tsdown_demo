@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsdown",
-    "build:rollup": "rollup -c rollup.config.ts --configPlugin typescript"
+    "build:rollup": "rollup -c rollup.config.ts --configPlugin typescript",
+    "dts": "vue-tsc --declaration --emitDeclarationOnly --outDir dist/types"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "vue-tsc": "^3.2.1"
   },
   "dependencies": {
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vue": "^3.5.26"
   }
 }
